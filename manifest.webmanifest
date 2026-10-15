@@ -1,7 +1,7 @@
 {
   "name": "La matrice de Cipolla",
   "short_name": "Cipolla",
-  "description": "Intelligent, naïf, bandit ou stupide ? Classe tes décisions avec la matrice de l'économiste Carlo Cipolla.",
+  "description": "Intelligent, naïf, bandit ou stupide ? Classe tes actes, et ceux des autres envers toi, avec la matrice de Carlo Cipolla.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
