@@ -589,7 +589,7 @@ body.focus .toast{bottom:calc(1.4rem + env(safe-area-inset-bottom,0px))}
     <div class="step-head"><p class="eyebrow" id="eb-prevision"></p><h2>Ta prévision</h2>
       <p class="rule">La mémoire réécrit l'histoire. Une fois enregistrée, cette prévision ne pourra plus être modifiée : tu la retrouveras telle quelle au moment du bilan.</p></div>
     <label class="field"><span class="lab">Une issue précise et vérifiable</span>
-      <input type="text" id="f-text" maxlength="160" placeholder="Facultatif. Ex. : le correctif tiendra sans retour arrière" autocomplete="off">
+      <input type="text" id="f-text" maxlength="160" placeholder="Facultatif" autocomplete="off">
     </label>
     <div class="card flat">
       <div class="slider">
@@ -676,7 +676,7 @@ body.focus .toast{bottom:calc(1.4rem + env(safe-area-inset-bottom,0px))}
     <div class="card stack">
       <h3>Ajouter une personne</h3>
       <label class="field"><span class="lab">Un pseudonyme ou des initiales</span>
-        <input type="text" id="p-name" maxlength="40" placeholder="« Mon chef », « J. », « le voisin »…" autocomplete="off">
+        <input type="text" id="p-name" maxlength="40" autocomplete="off">
       </label>
       <div class="field"><span class="lab" id="l-power">Sa position par rapport à toi</span>
         <div class="chips" id="p-power" role="group" aria-labelledby="l-power"></div>
@@ -1458,7 +1458,6 @@ function syncForm(){
   $('#l-title').textContent = inact ? (avant ? 'Ce que tu envisages de ne pas faire' : "Ce que tu n'as pas fait") : (avant ? 'Ce que tu envisages de faire' : 'Ce que tu as fait');
   const ti = $('#title');
   ti.readOnly = bilan;
-  ti.placeholder = inact ? "Ex. : je n'ai pas prévenu l'équipe du retard" : "Ex. : j'ai dépanné un collègue au lieu de finir mes propres tickets";
   renderScopeChips(); renderDomainChips();
   pressGroup('#src', 'data-v', d.src);
   $('#l-cost').textContent = avant ? "Qu'est-ce que ça pourrait coûter à quelqu'un ?" : "Qu'est-ce que ça a pu coûter à quelqu'un ?";
